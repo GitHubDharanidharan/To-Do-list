@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your TO-DO List</title>
+  <link rel="icon" type="image" href="todo-list-icon.png" />
+  <!--CSS stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet" />
+  <!--Fontawesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="list-home">
+    <h1>To-do List</h1>
+    <div class="list-input">
+      <input class="input" type="text" autofocus required placeholder="Add things to the list you wanna do.." />
+      <span><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <div class="list-button">
+      <button class="button-save btn">save</button>
+      <button class="button-clear btn">clear</button>
+    </div>
+  </div>
+
+  <div class="display-list" id="element">
+    <div>
+      <h1 class="h1-list">You have <span>No</span> list</h1>
+    </div>
+    <div>
+      <h1 class="to-do-list-quotes">
+        “Trust yourself <br />
+        that you can do it and get it.”
+      </h1>
+    </div>
+    <ol class="ol-list"></ol>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
